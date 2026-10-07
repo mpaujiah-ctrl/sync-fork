@@ -9,7 +9,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - run: gh repo sync https://github.com/mpaujiah-ctrl/android_kernel_xiaomi_crdroid --branch 16.0
+      - run: gh repo sync ${{ github.repository }} --branch 16.0
         env:
           GH_TOKEN: ${{ github.token }}
 
